@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>联系我</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f8ff;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .phone {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .wechat {
+            background-color: #07C160;
+            color: white;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .note {
+            color: #666;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>联系我</h1>
+    
+    <!-- 手机号按钮 - 替换19952308495为你的手机号 -->
+    <a href="tel:19952308495" class="btn phone">
+        📞 点击拨打我的电话
+    </a>
+    
+    <br>
+    
+    <!-- 微信按钮 - 替换rxiry1106为你的微信号 -->
+    <a href="weixin://dl/add?rxiry1106" class="btn wechat">
+        💬 添加我的微信
+    </a>
+    
+    <p class="note">如果微信无法自动跳转，请手动添加：<strong>rxiry1106</strong></p>
+    
+    <script>
+        // 页面加载时显示提示
+        window.onload = function() {
+            alert("请点击下方按钮联系我！");
+        };
+    </script>
+</body>
+</html>
